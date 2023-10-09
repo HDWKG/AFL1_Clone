@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/view', function () {
+Route::get('/', function () {
     return view('view');
+});
+Route::get('/new', function () {
+    return view('view_add');
+});
+Route::get('/assoc', function () {
+    return view('associate');
 });
